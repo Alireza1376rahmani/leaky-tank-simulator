@@ -1,38 +1,21 @@
-.App {
-  text-align: center;
+.shape {
+	position: relative;
+	min-height: 60vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.shape > .canva {
+	position: absolute;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.shape > .canva.first-water {
+	top: 20px;
+	left: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.shape > .canva.first-glass {
+	top: 120px;
+	left: 30px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.shape > .canva.second-water {
+	top: 270px;
+	left: 180px;
 }
